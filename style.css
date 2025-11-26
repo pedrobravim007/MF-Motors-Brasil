@@ -1,0 +1,277 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  background-color: #fe8330;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+/* MENU tela grnd */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s;
+  font-family: arial;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* SLIDE */
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.fade {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Botoes */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  transition: 0.3s;
+  user-select: none;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* Bolinhas */
+.bolinhas {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bolinha {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bolinha.ativa {
+  background-color: #fe8330;
+}
+
+/* BOLINHAS IFO */
+.bolinhas-container {
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.bolinha-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 220px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.bolinha-info-wrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icone {
+  height: 65px;
+  width: 65px;
+}
+
+.bolinha-info {
+  background-color: #ff7f00;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.texto-bolinha {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.descricao-bolinha {
+  font-size: 16px;
+  color: #555;
+}
+
+/* SOBRE */
+.sobre-nos {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.sobre-nos h2 {
+  font-size: 28px;
+  color: #fe8330;
+}
+
+/* FOOTER */
+footer {
+  background-color: #fe8330;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: lightgray;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* HAMBURGUER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* MENU MOBILE */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fe8330;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 200px;
+  padding: 10px;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: white;
+  padding: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .logo {
+    height: 50px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .bolinhas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .prev,
+  .next {
+    font-size: 22px;
+  }
+}

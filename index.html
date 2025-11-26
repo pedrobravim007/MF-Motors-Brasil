@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MF Motors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#" onclick="location.reload();">
+        <img src='https://i.postimg.cc/y8nHX64V/logo01.png' border='0' alt='logo01' class="logo">
+      </a>
+
+      <ul>
+        <li><a href="#equipamentos">Equipamentos</a></li>
+        <li><a href="#motos">Motos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#equipamentos">Equipamentos</a>
+    <a href="#motos">Motos</a>
+    <a href="#contato">Contato</a>
+    <a href="#sobre">Sobre</a>
+  </div>
+
+  <main>
+
+    <!-- SLIDE -->
+    <section class="slider-container">
+
+      <div class="slide fade">
+        <a target="_blank"><img src='https://i.postimg.cc/8ccMyzjQ/slide01.png'></a>
+      </div>
+
+      <div class="slide fade">
+        <a href='https://www.ducati.com/br/pt/motos/monster/monster-937' target='_blank'>
+          <img src='https://i.postimg.cc/mgtpcTwj/slide02.png'>
+        </a>
+      </div>
+
+      <div class="slide fade">
+        <a href='https://cbm.esp.br/competicoes/cbm/campeonato-brasileiro-de-motocross' target='_blank'>
+          <img src='https://i.postimg.cc/zf4sDyYT/slide03.png'>
+        </a>
+      </div>
+
+      <!-- Botões -->
+      <a class="prev" id="botao-voltar">&#10094;</a>
+      <a class="next" id="botao-avancar">&#10095;</a>
+
+      <!-- Bolinhas automáticas -->
+      <div class="bolinhas" id="bolinhas"></div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre-nos">
+      <h2>Sobre Nós</h2>
+      <p>
+        Na MF Motors, viver sobre duas rodas é mais que paixão, é estilo de vida. Somos especializados em motos de trilha e equipamentos de alta performance, escolhidos para quem busca aventura, liberdade e segurança.
+      </p>
+      <p>
+        Mais do que uma loja, somos um ponto de encontro para pilotos e apaixonados por motocross. Aqui você encontra atendimento de quem entende e produtos que aceleram junto com você.
+      </p>
+    </section>
+
+    <!-- BOLINHAS INFO -->
+    <section>
+      <div class="bolinhas-container">
+
+        <div class="bolinha-info-wrapper" id="motos">
+          <div class="bolinha-info">
+            <a href="https://mxfmotors.com.br/motos/" target='_blank'>
+              <img src='https://i.postimg.cc/BQ8W1W4r/icone02.png' class="icone">
+            </a>
+          </div>
+          <p class="texto-bolinha">Nossas Motos</p>
+          <p class="descricao-bolinha">Conheça nossa linha completa de motos para trilha e aventura.</p>
+        </div>
+
+        <div class="bolinha-info-wrapper" id="equipamentos">
+          <div class="bolinha-info">
+            <a href="https://www.foxracing.com.br/moto" target='_blank'>
+              <img src='https://i.postimg.cc/DfLLf0Xk/Design-sem-nome.png' class="icone">
+            </a>
+          </div>
+          <p class="texto-bolinha">Equipamentos</p>
+          <p class="descricao-bolinha">Trabalhamos com as melhores marcas do mercado.</p>
+        </div>
+
+        <div class="bolinha-info-wrapper" id="patrocinio">
+          <div class="bolinha-info">
+            <a href="https://www.redbull.com/br-pt/tags/motocross" target='_blank'>
+              <img src='https://i.postimg.cc/L81MwcWC/icone03.png' class="icone">
+            </a>
+          </div>
+          <p class="texto-bolinha">Patrocínio</p>
+          <p class="descricao-bolinha">Acha que manda bem? Fale com a gente sobre patrocínio.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 MF Motors. Todos os direitos reservados.</p>
+        <p>Endereço: Rua das Trilhas, 123 - Venda Nova do Imigrante, ES</p>
+        <p id="contato">Contato: (27) 99999-9999 | contato@mfmotors.com.br</p>
+        <div class="redes-sociais">
+          <a href="#">Instagram</a> |
+          <a href="#">Facebook</a> |
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
